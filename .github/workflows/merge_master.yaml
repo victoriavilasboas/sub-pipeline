@@ -8,14 +8,12 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-        with: 
-          repository: victoriavilasboas/main-pipeline
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Pull & update submodules recursively
         run: |
-          git submodule update --init --recursive
-          git submodule update --recursive --remote
+          cd pipeline 
+          git pull origin main
+
       - name: Commit
         run: |
           git config user.email "actions@github.com"
