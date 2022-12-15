@@ -4,4 +4,4 @@ on:
   
 jobs:
   build:
-    uses: victoriavilasboas/main-pipeline/tree/main/.github/workflows/merge_master.yaml@main
+    uses: ./main-pipeline/tree/main/.github/workflows/merge_master.yaml@main
