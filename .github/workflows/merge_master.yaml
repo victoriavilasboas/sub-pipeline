@@ -1,0 +1,7 @@
+on:
+  push:
+    branches: [ master ]
+  
+jobs:
+  build:
+    uses: victoriavilasboas/main-pipeline/tree/main/.github/workflows/merge_master.yaml@main
